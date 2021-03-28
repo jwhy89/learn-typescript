@@ -1,7 +1,7 @@
 {
   "name": "learn-typescript",
   "version": "1.0.0",
-  "description": "",
+  "description": "Follow along with https://www.youtube.com/watch?v=gp5H0Vw39yw",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
