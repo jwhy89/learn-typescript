@@ -46,3 +46,23 @@ let errorMessage: string | null = null;
 const popularTags: PopularTag[] = ["dragon", "coffee"];
 
 const dragonsTag: MaybePopularTag = "dragon";
+
+const doSomething = (): void => {
+    console.log("doSomething");
+}
+
+const doSomethingNever = (): never => {
+    throw "never";
+}
+
+let vAny: any = 10;
+let vUnknown: unknown = 10;
+
+let s1: string = vAny;
+let s2: string = vUnknown as string;
+
+// console.log(vAny.foo());
+// console.log(vUnknown.foo());
+
+let pageNumber: string = '1';
+let numericPageNumber: number = pageNumber as unknown as number;
