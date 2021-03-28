@@ -9,20 +9,20 @@
 // console.log(statuses.inProgress);
 
 enum StatusEnum {
-    NotStarted = 'notStarted',
-    InProgress = 'inProgress',
-    Done = 'done',
+  NotStarted = 'notStarted',
+  InProgress = 'inProgress',
+  Done = 'done',
 }
 
 interface Task {
-    id: string;
-    status: StatusEnum;
+  id: string
+  status: StatusEnum
 }
 
-let notStartedStatus: StatusEnum = StatusEnum.NotStarted;
+let notStartedStatus: StatusEnum = StatusEnum.NotStarted
 console.log(notStartedStatus)
 
-notStartedStatus = StatusEnum.Done;
+notStartedStatus = StatusEnum.Done
 console.log(notStartedStatus)
 
 console.log(StatusEnum.InProgress)
