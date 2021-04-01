@@ -34,3 +34,13 @@ const userFive: GenericUserInterface<string[], string> = {
   data: ['Foo', 'Bar', 'Baz'],
 }
 console.log('userFive', userFive)
+
+const userSix: GenericUserInterface<{ meta: string }, string> = {
+  name: 'Jill',
+  data: {
+    meta: 'hill',
+  },
+  meta: 'bill',
+}
+
+console.log('userSix', userSix)

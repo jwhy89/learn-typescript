@@ -1,6 +1,10 @@
 module.exports = {
     reportUnusedDisableDirectives: true,
     root: true,
+    env: {
+      browser: true,
+      node: true,
+    },
     parser: '@typescript-eslint/parser',
     plugins: ['@typescript-eslint', 'import', 'prettier', 'jest'],
     extends: [
