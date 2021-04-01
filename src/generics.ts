@@ -22,8 +22,6 @@ const userFour: GenericUserInterface<{ meta: string }, string> = {
   meta: 'bar',
 }
 
-type AdditionProperty = string
-
 // explicit declarations are easier to read
 const result = addId(userFour)
 console.log('result', result)
@@ -35,3 +33,4 @@ const userFive: GenericUserInterface<string[], string> = {
   name: 'John',
   data: ['Foo', 'Bar', 'Baz'],
 }
+console.log('userFive', userFive)

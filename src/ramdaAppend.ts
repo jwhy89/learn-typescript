@@ -4,9 +4,9 @@ const updatedArray = R.append<string>('baz', ['foo', 'bar'])
 
 console.log('updatedArray', updatedArray)
 
-const searchStr = 'foo'
+const searchStr = 'bar'
 const hasSearchedString = R.any<string>((a: string) =>
   R.contains(searchStr, ['fooooo', 'bar', 'baz']),
 )
 
-console.log('hasSearchedString', hasSearchedString)
+console.log('hasSearchedString', hasSearchedString(updatedArray))
